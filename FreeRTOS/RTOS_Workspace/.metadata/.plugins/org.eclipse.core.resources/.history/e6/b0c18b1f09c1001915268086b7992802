@@ -1,0 +1,32 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+
+#include "stm32f4xx.h"
+
+void vATaskFunction( void *pvParameters)
+{
+	for(;;)
+	{
+
+	}
+}
+			
+
+int main(void)
+{
+	BaseType_t xTaskCreate( TaskFunction_t vTaskCode,
+								const char * const pcName,
+								unsigned short usStackDepth,
+								void *pvParameters,
+								UBaseType_t uxPriority,
+								TaskHandle_t *pxCreatedTask
+							);
+}
